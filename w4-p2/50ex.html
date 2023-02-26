@@ -68,6 +68,234 @@
         
     --><head>
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <title>Quiz</title>
+
   </head>
-  <body cz-shortcut-listen="true"></body>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+  max-width: 400px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  color: brown;
+}
+
+.article {
+  border: 1px solid rgb(0, 0, 0);
+  font-size: .7rem;
+  font-weight: 600;
+}
+
+.table-container{
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+p {
+  margin-left: 20px ;
+}
+
+footer span:last-of-type {
+  display: none;
+}
+
+
+
+table, th , td {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+td {
+  border: .5px solid green;
+  width: 85px;
+}
+
+tr {
+  border-bottom: .5px dashed red;
+}
+
+img {
+    width: 20px
+}
+
+
+
+
+</style>
+
+
+  <body cz-shortcut-listen="true">
+
+    <h1>ESERCIZI</h1>
+
+    <ol>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+    </ol>
+
+    <div class="table-container">
+      <table>
+        <tr>
+          <tr rowspan="0">Persons</tr>
+        </tr>
+        <tr>
+          <th>Nome</th>
+          <th>Cognome</th>
+          <th>Età</th>
+          <th>Paese</th>
+          <th>id</th>
+        </tr>
+        <!-- dati -->
+        <tr>
+          <td>Laura</td>   
+          <td>Quintero <a href="#"><img src="assets/star.jpeg"></a> </td>
+          <td>29</td>
+          <td>Colombia</td>
+          <td>1018621</td>
+        </tr>
+
+        <tr>
+          <td>Paolo</td>
+          <td>Riva<a href="#"><img src="assets/star.jpeg"></a></td>
+          <td>30</td>
+          <td>Chile</td>
+          <td>462225</td>
+        </tr>
+
+        <tr>
+          <td>Francesco</td>
+          <td>Riva<a href="#"><img src="assets/star.jpeg"></a></td>
+          <td>40</td>
+          <td>Italia</td>
+          <td>6798522</td>
+        </tr>
+
+        <tr>
+          <td>Cristina</td>
+          <td>Roux<a href="#"><img src="assets/star.jpeg"></a></td>
+          <td>43</td>
+          <td>Italia</td>
+          <td>34949627</td>
+        </tr>
+
+      </table>
+
+
+
+
+    </div>
+      
+
+<hr>
+
+    <div class="article">
+      <p>
+        king it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+      </p>
+
+      <ul>
+        <li>Javascript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+    </div>
+
+    <footer>
+      <span>Laura Quintero</span>
+      <span>Milano, Italy</span>
+      <span>CAP</span>
+    </footer>
+
+
+  <!-- ----------------javascript----------------- -->
+    <script>
+
+    // ---- 21 -----
+    let x = 'John'
+    let y = 'Doe'
+    console.log(x+'<>'+y)
+
+    // ---- 22 -----
+    let student = {
+      name: 'Laura',
+      surname: 'Quintero',
+      email: 'laura93q@gmail.com'
+    };
+    console.log(student);
+
+    // ---- 23 -----
+    delete student.email;
+    console.log(student)
+    
+    // ---- 24 -----
+    let arrayStr = ['dog','cat', 'elephant', 'snake','monkey', 'rabbit', 'worm', 'horse', 'mouse', 'bear']
+    
+    // ---- 25 -----
+    for (animal of arrayStr) {
+      console.log(animal);
+    }
+    
+    // ---- 26 -----
+    let arrRandom = [];
+
+    for (let i = 0; i <= 100; i++) {
+      let numRandom = Math.round(Math.random()*100);
+      arrRandom.push(numRandom)
+    }
+    console.log(arrRandom);
+    
+    // ---- 27 -----
+    console.log(Math.max(...arrRandom))
+    console.log(Math.min(...arrRandom))
+    
+    // ---- 28 -----
+    let array
+    
+    // ---- 29 -----
+    
+    // ---- 30 -----
+
+    // ---- 31 -----
+
+    // ---- 32 -----
+
+    // ---- 33 -----
+
+    // ---- 34 -----
+
+    // ---- 35 -----
+
+    // ---- 36 -----
+
+    // ---- 37 -----
+
+    // ---- 38 -----
+
+    // ---- 39 -----
+    
+    // ---- 40 -----
+
+
+
+
+    </script>
+  </body>
 </html>
+
