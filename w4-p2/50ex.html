@@ -262,11 +262,34 @@ img {
     console.log(arrRandom);
     
     // ---- 27 -----
-    console.log(Math.max(...arrRandom))
-    console.log(Math.min(...arrRandom))
+    // console.log(Math.max(...arrRandom))
+    // console.log(Math.min(...arrRandom))
+    let nmin = arrRandom [0];
+    let nmax = arrRandom [0];
+   
+      function minMax (){
+ 
+      for (let i = 0; i < arrRandom.length; i++) {
+        if (arrRandom[i] > nmax) {
+          nmax = arrRandom[i];
+        }
+        if (arrRandom[i] < nmin) {
+          nmin = arrRandom[i];
+        }
+      }
+      console.log('risultato max :'+ nmax);
+      console.log('risultato min :'+ nmin);
+    }
+
+    console.log(minMax());
     
     // ---- 28 -----
-    let array
+    function minMax() {}
+    
+
+
+
+
     
     // ---- 29 -----
     function dueArray (x,y) {
@@ -350,6 +373,9 @@ img {
 
     // ---- 40 -----
 
+
+    // ---- 41 -----
+    
 
 
 
