@@ -133,7 +133,10 @@ img {
     width: 20px
 }
 
-
+footer {
+  display: flex;
+  flex-direction: column;
+}
 
 
 </style>
@@ -221,6 +224,7 @@ img {
       <span>Laura Quintero</span>
       <span>Milano, Italy</span>
       <span>CAP</span>
+      <a href="#">Home</a>
     </footer>
 
 
@@ -262,29 +266,40 @@ img {
     console.log(arrRandom);
     
     // ---- 27 -----
-    // console.log(Math.max(...arrRandom))
-    // console.log(Math.min(...arrRandom))
-    let nmin = arrRandom [0];
-    let nmax = arrRandom [0];
+    console.log(Math.max(...arrRandom))
+    console.log(Math.min(...arrRandom))
+    // let nmin = arrRandom [0];
+    // let nmax = arrRandom [0];
    
-      function minMax (){
+    //   function minMax (){
  
-      for (let i = 0; i < arrRandom.length; i++) {
-        if (arrRandom[i] > nmax) {
-          nmax = arrRandom[i];
-        }
-        if (arrRandom[i] < nmin) {
-          nmin = arrRandom[i];
-        }
-      }
-      console.log('risultato max :'+ nmax);
-      console.log('risultato min :'+ nmin);
-    }
+    //   for (let i = 0; i < arrRandom.length; i++) {
+    //     if (arrRandom[i] > nmax) {
+    //       nmax = arrRandom[i];
+    //     }
+    //     else if  (arrRandom[i] < nmin) {
+    //       nmin = arrRandom[i];
+    //     }
+    //   }
+    //   console.log('risultato max :'+ nmax);
+    //   console.log('risultato min :'+ nmin);
+    // }
 
-    console.log(minMax());
+    // console.log(minMax());
     
     // ---- 28 -----
-    function minMax() {}
+    function minMax(xArray, yArray) {
+
+      let nestedArrayX = 0;
+
+      for ( let i = 0; i < xArray; i++){
+
+      }
+
+
+
+
+    }
     
 
 
@@ -357,24 +372,95 @@ img {
     function addRow (){
       let table = document.querySelector('table');
       let row = table.insertRow(1);
-      let cell1 = row.insertCell(0).textContent;
-      cell1.textContent = 'data';
+      let cell1 = row.insertCell(0).innerText='data';
+
+      return row;
     }
     console.log(addRow());
 
     // ---- 36 -----
-    
+
+    function addClaasRow () {
+
+      let rowTables = document.querySelectorAll('tr');
+      
+      for (row of rowTables) {
+        row.classList.add('test')
+      }
+
+      return rowTables;
+      
+    }
+    console.log(addClaasRow());
+
 
     // ---- 37 -----
+    function linkBg () {
+
+      let links = document.querySelectorAll('a');
+
+      for (link of links){
+        link.style.backgroundColor = 'yellow'
+      }
+
+    }
+    console.log(linkBg());
 
     // ---- 38 -----
 
+    window.onload = function loadBody() {
+      let body = document.querySelector('BODY');
+      // console.log(body);
+
+      let bodyLoaded = body.addEventListener('load', console.log('Page Loaded'));
+
+      return bodyLoaded;
+    }  
+
+
     // ---- 39 -----
+
+    function newItemList(){
+      let newLi = document.createElement('li');
+      newLi.innerHTML = 'EPICODE';
+
+      document.querySelector('ul').appendChild(newLi);
+    }
+
+    console.log(newItemList());
+
 
     // ---- 40 -----
 
+    function emptyList () {
+      let list = document.querySelectorAll('ol > li');
+
+      for (li of list) {
+        li.remove();
+      }
+
+    }
+
+    console.log(emptyList());
+
 
     // ---- 41 -----
+
+    function alertLink(){
+      let links = document.querySelectorAll('BODY a');
+      
+
+      for (link of links) {
+        let linkHref= link.getAttribute('href');
+        link.addEventListener('mouseover', alert(linkHref))
+      }
+      
+      return links;
+      
+    }
+
+    console.log(alertLink())
+    
     
 
 

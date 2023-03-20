@@ -111,8 +111,8 @@ const questions = [
     let domanda = document.createElement("h3")
     domanda.innerText = domandaCorrente.question
 
-    let risposte = [domandaCorrente.correct_answer, ...domandaCorrente.incorrect_answers] // i 3 puntini (...) servono a concatenare 2 array
-    shuffleArray(risposte)//mette in ordine casuale l'ordine delle array
+    let risposte = [domandaCorrente.correct_answer, ...domandaCorrente.incorrect_answers] 
+    shuffleArray(risposte)
 
     let listaRisposte = document.createElement("ul")
     for (const risposta of risposte) {
